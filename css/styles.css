@@ -1,0 +1,843 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arvo";
+}
+
+ body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.offset::before{
+  display:block;
+  content:"";
+  height:10rem;
+  margin-top:-2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+hr {
+  border: dotted #CDF2CA 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 15px auto;
+}
+
+/* Navigation  */
+.navbar {
+  background-color: #fff;
+  padding: 0rem 6rem;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  height: 5rem;
+}
+
+#navbarResponsive>ul>li:nth-child(n)>a {
+  color: #142F43;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+  font-family: "Arvo";
+}
+
+#navbarResponsive>ul>li:nth-child(n)>a:hover,
+#navbarResponsive>ul>li:nth-child(n)>a:active {
+  color: #E26A2C;
+}
+
+/* header */
+
+#header{
+  background-image: url(../images/2-min.jpg);
+  width: 100%;
+  height:100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+#header h2{
+  color: #D4AC2B;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: "Arvo";
+  font-weight: 500;
+
+}
+#header h6{
+  width: 50%;
+  color: #D4AC2B;
+  font-size: 1rem;
+line-height: 30px;
+font-family: "Arvo";
+font-weight: 400;
+
+}
+
+
+
+/* carousal */
+.carousel {
+  background-color: #F4F6F7;
+  padding: 3% 4%;
+}
+
+.carousel-item {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 4px 0 4px 0;
+  transition: (1 ease-in-out left);
+  font-family: "Libre Caslon";
+  font-weight: 400;
+}
+
+.carousel-item a {
+  color: #000;
+}
+
+.fa-phone {
+  color: #053742;
+  transform: rotate(90deg);
+}
+
+/* About */
+#about {
+  background-color: #F4F6F7;
+  padding: 6vw 4vw 4vw 4vw;
+}
+
+.profile-img {
+  margin-left: 40%;
+  border-radius: 50%;
+  width: 20%;
+}
+
+#about h2 {
+  color: #000;
+  font-family: "Arvo";
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 4px 6px;
+  margin-top: 10px;
+}
+
+#about h3 {
+  color: #000;
+  font-family: "Arvo";
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#about p {
+  color: #000;
+  font-size: 1.3rem;
+  padding: 1% 3%;
+  font-family: "Libre Caslon";
+  font-weight: 500;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* offer */
+#Offer {
+  padding: 2vw 2vw 2vw 2vw;
+  background-color: #fff;
+}
+
+.offering-box {
+  font-family: "Libre Caslon";
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2% 2% 2% 2%;
+  font-weight: 400;
+  font-family: #000;
+}
+
+#Offer h3 {
+  font-family: "Arvo";
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 2% 2% 2% 2%;
+  font-weight: 400;
+  font-family: #000;
+}
+
+#Offer p {
+  color: #000;
+  font-size: 1.3rem;
+  padding: 1% 3%;
+  font-family: "Libre Caslon";
+  font-weight: 400;
+  text-align: center;
+  line-height: 30px;
+}
+
+.icon {
+  color: #053742;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #CDF2CA;
+}
+
+/* Service */
+#service {
+  background-color: #F4F6F7;
+  padding: 6vw 4vw 4vw 4vw;
+}
+
+#service h2 {
+  color: #000;
+  font-family: "Arvo";
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 4px 6px;
+  margin-top: 10px;
+}
+
+.services h3 {
+  color: #000;
+  font-weight: 600;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#service p {
+  text-align: center;
+  font-family: "Libre Caslon";
+  font-size: 1.5rem;
+  color:#000;
+}
+
+.dot Before {
+  content: "\2022";
+  color:#6C4A4A ;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  padding: 10%
+}
+
+.col-lg-6 {
+  padding: 4vw 4vw 4vw 4vw;
+}
+
+.information {
+  padding: 4vw 4vw 4vw 4vw;
+}
+
+.information h2 {
+  color: #000;
+  font-family: "Arvo";
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 4px 6px;
+}
+
+
+
+
+/* Contact info */
+#contact-info {
+  background-color: #F4F6F7;
+  padding: 6vw 4vw 4vw 4vw;
+}
+
+#contact-info h2 {
+  color: #000;
+  font-family: "Arvo";
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 4px 6px;
+  margin-top: 10px;
+}
+
+#contact-info h4 {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 15px;
+}
+
+#contact-info p {
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 15px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Libre Caslon";
+  font-weight: 400;
+}
+
+#contact-info a {
+  color: #DFD8CA;
+  text-align: center;
+  text-decoration: none;
+  color: #4A47A3;
+  font-size: 1.2rem font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+/* message form */
+#message-form {
+  background-color: #fff;
+  padding: 4vw 4vw 4vw 4vw;
+}
+
+#message-form h2 {
+  color: #000;
+  font-family: "Arvo";
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 4px 6px;
+  margin-top: 10px;
+}
+
+#message-form p {
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 15px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Libre Caslon";
+  font-weight: 400;
+}
+
+#message-form {
+  background-color: #F4F6F7;
+}
+
+#message-form h2 {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 500;
+  line-height: none;
+  padding: 10px;
+}
+
+#message-form p {
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 15px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Libre Caslon";
+  font-weight: 400;
+}
+
+.contact-form {
+  margin: 35px auto 0px auto;
+  width: 80%;
+}
+
+.contact-form label {
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.contact-form input {
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: #ADC2A9;
+  font-size: 18px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact-form input:focus {
+  border-bottom: 2px solid #1a883f;
+}
+
+.contact-form textarea {
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: #ADC2A9;
+  font-size: 18px;
+  border-radius: 3px;
+  width: 100%;
+  font-family: inter;
+  font-weight: normal;
+}
+
+.contact-form textarea:focus {
+  border-bottom: 2px solid #1a883f;
+}
+
+.contact-form button {
+  font-size: 19px;
+  width: 100%;
+  margin-top: 25px;
+  border: none;
+  padding: 12px 20px;
+  background-color: #22b352;
+  color: #ADC2A9;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border-bottom: 3px solid #1a883f;
+}
+
+.contact-form button:hover {
+  background-color: #1a883f;
+  border-bottom: 3px solid #22b352;
+}
+
+/* privacy */
+#privacy {
+  background-color: #F4F6F7;
+  padding: 6vw 2vw;
+  margin-left: 2px 4px;
+  margin-top: 10px
+}
+
+#privacy-col1 .data h2 {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 500;
+  line-height: none;
+  padding: 10px;
+}
+
+#privacy .data p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 30px;
+  padding-left: 15px;
+}
+
+#privacy .data h4 {
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: 600;
+  line-height: 10px;
+  padding: 35px 2px 25px 2px;
+}
+
+#privacy .data li {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 550;
+  padding-left: 0 2px 2px 2px;
+  line-height: 10px;
+}
+
+#privacy .term h5 {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 35px 2px 25px 2px;
+}
+
+#privacy .term p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 30px;
+  padding-left: 15px;
+}
+
+#privacy .term li {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 550;
+  padding-left: 15px;
+}
+
+/* imprint */
+#imprint {
+  background-color: #F4F6F7;
+  padding: 6vw 2vw;
+  margin-left: 2px 4px;
+  margin-top: 10px;
+}
+
+#imprint .imprint-doc-1 h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 15px;
+}
+
+#imprint .imprint-doc-1 p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+  padding-left: 15px;
+}
+
+#imprint .imprint-doc-2 a {
+  color: red;
+}
+
+#imprint .imprint-doc-2 p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+  padding-left: 15px;
+}
+
+/* footer */
+footer {
+  align-items: center;
+  background-color: #F4F6F7;
+  justify-content: space-between;
+  padding: 1vw 5vw;
+}
+
+footer p {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Libre Caslon";
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+footer li {
+  color: #000;
+  text-align: center;
+}
+
+footer a {
+  color: #000D6B;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  text-align: center;
+  font-family: "Libre Caslon";
+}
+
+/* Media query */
+
+
+@media only screen and (max-width:769px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+
+    padding: 12px 15px;
+    z-index:999;
+}
+.navbar-brand img {
+    height: 3rem;
+}
+#navbarResponsive>ul>li:nth-child(n)>a {
+    font-size: 1rem;
+    padding: 3px 6px;
+
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#header h2 {
+    color: #D4AC2B;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    font-family: "Arvo";
+    font-weight: 600;
+}
+#header h6 {
+    width: 90%;
+    color: #D4AC2B;
+    font-size: 1.3rem;
+    line-height: 20px;
+    font-family: "Arvo";
+    font-weight: 500;
+}
+
+}
+.offset::before {
+    display: block;
+    content: "";
+    height: 5rem;
+    margin-top: -1rem;
+}
+#about {
+
+    padding: 2vw 3vw 3vw 3vw;
+}
+#about p {
+
+    font-size: 1.2rem;
+    padding: 10px 12px;
+    font-family: "Libre Caslon";
+    font-weight: 500;
+    text-align: center;
+    line-height: 32px;
+}
+#contact-info p {
+
+    font-size: 1.3rem;
+    line-height: 25px;
+    text-align: center;
+    padding: 5px;
+    font-family: "Libre Caslon";
+    font-weight: 400;
+}
+
+#message-form p {
+    color: #000;
+    font-size: 1.3rem;
+    line-height: 25px;
+    text-align: center;
+    padding: 1px;
+    font-family: "Libre Caslon";
+    font-weight: 500;
+}
+
+}
+#message-form {
+    background-color: #fff;
+    padding: 4vw 4vw 4vw 4vw;
+}
+}
+@media only screen and (max-width:415px){
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+
+  .navbar {
+      padding: 12px 12px;
+      z-index: 999;
+  }
+  .navbar-brand img {
+      height: 4rem;
+  }
+
+  .col-lg-6 {
+    padding: 1vw 1vw 2vw 1vw;
+}
+
+  #message-form {
+      background-color: #fff;
+      padding: 3vw 3vw 3vw 3vw;
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.col-lg-6 {
+    padding: 7px 15px;
+}
+}
+
+@media only screen and (max-width:377px){
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .navbar-brand img {
+      height: 4rem;
+  }
+  #navbarResponsive>ul>li:nth-child(n)>a {
+    font-size: 1rem;
+    padding: 5px 6px;
+}
+#header h2 {
+    color: #D4AC2B;
+    font-size: 16px;
+    letter-spacing: .07px;
+    font-family: "Arvo";
+    font-weight: 400;
+
+}
+#header h6 {
+    width: 100%;
+    color: #D4AC2B;
+    font-size: 1rem;
+    line-height: 25px;
+    font-family: "Arvo";
+    font-weight: 400;
+}
+.col-lg-6 {
+    padding: 4vw 7vw 4vw 7vw;
+}
+.information {
+    padding: 2vw 2vw 2vw 2vw;
+}
+}
+
+@media only screen and (max-width:321px){
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  #header h2 {
+      color: #D4AC2B;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      font-family: "Arvo";
+      font-weight: 500;
+  }
+  #service h2 {
+    color: #000;
+    font-family: "Arvo";
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 2px 3px;
+    margin-top: 9px;
+}
+#contact-info a {
+    color: #DFD8CA;
+    text-align: center;
+    text-decoration: none;
+    color: #4A47A3;
+    font-size: 1rem ;
+    font-family: "Ubuntu";
+    font-weight: 400;
+}
+}
+@media only screen and (max-width:1025px){
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .navbar-brand img {
+      height: 6rem;
+  }
+  #header h2 {
+      color: #D4AC2B;
+      font-size: 2.1rem;
+      letter-spacing: 1px;
+      font-family: "Arvo";
+      font-weight: 600;
+  }
+  #header h6 {
+      width: 90%;
+      color: #D4AC2B;
+      font-size: 1.5rem;
+      line-height: 30px;
+      font-family: "Arvo";
+      font-weight: 500;
+  }
+  * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arvo";
+}
+
+}
+@media all and (min-width: 1000px) {
+  .contact-form {
+    width: 40%;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .contact-form {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 360px){
+  #service p {
+    text-align: center;
+    font-family: "Libre Caslon";
+    font-size: 1rem;
+    color: #000;
+    padding:2px;
+}
+}
+@media screen and (min-width:281px){
+  #header h2 {
+    color: #D4AC2B;
+    font-size: 1rem;
+letter-spacing: normal;
+    font-family: "Arvo";
+    font-weight: 700;
+}
+}
+
+@media screen and (min-width:517px){
+  #header h2 {
+    color: #D4AC2B;
+    font-size: 1.2rem;
+letter-spacing: normal;
+    font-family: "Arvo";
+    font-weight: 500;
+}
+#service p {
+  text-align: center;
+  font-family: "Libre Caslon";
+  font-size: 1rem;
+  color: #000;
+  padding:2px;
+}
+#header h6 {
+  color: #D4AC2B;
+  font-size: 1rem;
+letter-spacing: normal;
+  font-family: "Arvo";
+  font-weight: 400;
+}
+}
